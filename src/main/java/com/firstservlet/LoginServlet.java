@@ -24,6 +24,7 @@ public class LoginServlet extends HttpServlet{
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String nameRegex="^[A-Z]{1}[a-z]{3,}$";
         String user = req.getParameter("user");
         String pwd = req.getParameter("pwd");
 
